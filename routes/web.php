@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\Jadde;
 use App\http\Controllers\CustomerController;
 use App\http\Controllers\OficinaController;
+use App\http\Controllers\PedidosController;
 
 
 
@@ -54,3 +55,8 @@ route::get('/clientes',
 route::get('/oficinas',
 [OficinaController::class,'listar']
 );
+
+route::get('/pedidos',
+[PedidosController::class,'listar']
+);
+
